@@ -31,6 +31,7 @@ input[type=text] {
     background: none;
     padding: 5px;
     width: 400px;
+    text-align: center;
     font-size: 1.2em;
     border: solid 3px #0085aa;
     border-radius: 10px;
@@ -54,7 +55,7 @@ input[type=submit] {
 #randomBtn {
 
     background-color:  #0085aa;
-    border: none;
+    border: solid 3px #0085aa;
     padding: 5px;
     width: 100px;
     color: #fcfeff;
