@@ -15,19 +15,33 @@
                 <div class="sub-container-box">
                     <form>
                         <input type="text" name="search_term" value="">
-                        <input type="submit" name="search_btn" value="search"> 
+                        <input type="submit" name="search_btn" value="search">
+
                     </form>
-                    <button type="">random</button>
+                   <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+                   <button id="randomBtn" type="">random</button>
+                   </a> 
                 </div>
 
                 <!-- search results -->
             <div class="sub-container-box">
+                <h3>Results</h3>
                 <ul class="item-container">
-
+                    
                 </ul>
             </div>
             </div>
         </div>
+
+
+          <!-- import jquery3 -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+        <!-- import app.js -->
+        <script src="app.js"></script>
             
     </body>
 </html>
