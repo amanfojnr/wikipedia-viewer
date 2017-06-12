@@ -1,3 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+
+html {
+    height: 100%;
+
+}
+
 body {
-    
+    background: #fcfeff;
+    color: #202123;
+    font-family: 'Comfortaa', cursive;
+    height: 100%;
+}
+
+.main-container {
+    height: 100%;
+    display: flex;
+}
+
+.sub-container {
+    text-align: center;
+    margin: auto;
+}
+
+ 
+form {
+    margin: 30px;
+}
+input[type=text] {
+    background: none;
+    padding: 5px;
+    width: 400px;
+    font-size: 1.2em;
+    border: solid 3px #0085aa;
+    border-radius: 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+
+
+
+input[type=submit] {
+     border: solid 3px #0085aa;
+    padding: 5px;
+    width: 100px;
+    color:  #0085aa;
+    font-size: 1.2em;
+    border-radius: 10px;
+    background: none;
+}
+
+#randomBtn {
+
+    background-color:  #0085aa;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    color: #fcfeff;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+#error_message {
+    display: none;
+}
+.results {
+    text-align: left;
+    max-width: 800px;
+    display: none;
+}
+
+#search_results {
+    list-style-type: none;
+}
+
+#search_results li {
+    background: white;
+    border-bottom: solid 3px #0085aa;
+    margin-bottom: 20px;
+}
+
+#search_results a {
+    text-decoration: none;
+    line-height: 1.5em;
+
+}
+
+#search_results li h3 {
+    color: #0085aa; 
+}
+#search_results li p {
+    text-align: justify;
+    color: #202123;
 }

@@ -6,6 +6,8 @@
         <meta name="author" content="Kenneth Amanfo Junior">
         <meta name="description" content="a web app to look for wikipedia entries">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="main.css" rel="stylesheet">
     </head>
     <body>
@@ -18,15 +20,17 @@
                         <input type="submit" name="search_btn" value="search">
 
                     </form>
-                   <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+                  
+                 <p id="error_message">Sorry, I only work if you give me a search term</p>
+                  <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
                    <button id="randomBtn" type="">random</button>
                    </a> 
                 </div>
 
                 <!-- search results -->
-            <div class="sub-container-box">
-                <h3>Results</h3>
-                <ul class="item-container">
+            <div class="sub-container-box results">
+                <h2>Results</h2>
+                <ul id="search_results" class="item-container">
                     
                 </ul>
             </div>
