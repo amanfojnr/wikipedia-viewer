@@ -10,8 +10,13 @@ $("form").on("submit", (event) => {
     if ($search === "") {
         $("#error_message").show().addClass("animated fadeInRightBig");
     }
-    else
-        getSearchResults($search);
+    else{
+          $(".results").hide();
+         $("#search_results li").remove();
+         getSearchResults($search);
+    }
+
+       
 });
 
 
@@ -32,7 +37,8 @@ $("form").on("submit", (event) => {
         "success": (data) => {
                 let cleanedArray = [];
                 let tempArray = [];
-                console.log(data);
+
+            // clean data to fit use case    
             for (y = 0; y < data[1].length; y++){
                 for (x = 1; x < data.length; x++ ){
                     tempArray.push(data[x][y]);
@@ -43,7 +49,7 @@ $("form").on("submit", (event) => {
             $(".results").show().addClass("animated bounceInUp ");
             for(x = 0; x < cleanedArray.length; x++){
                 $("#search_results").append(
-                 "<a href='" + cleanedArray[x][2] + "' target='_blank'>" +
+                 "<a href='" + cleanedArray[x][2] + "' target='_blank' >" +
                  "<li><h3>" + cleanedArray[x][0] + "</h2>" +
                  "<p>" + cleanedArray[x][1] + "</p></li></a>"
                 );
